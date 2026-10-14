@@ -1,0 +1,194 @@
+Claro. Ajustando a atividade para 6 pontos:
+
+Atividade Prática – Computação Gráfica
+As atividades abaixo deverão ser realizadas em dupla, ao final de cada aula prática.
+
+Cada atividade possui um arquivo inicial com trechos identificados por TODO. A dupla deverá alterar somente os trechos indicados, preservando a estrutura original do projeto.
+
+O enunciado completo de cada exercício está disponível no arquivo ATIVIDADE.md, localizado dentro da pasta alunos/ correspondente à aula.
+
+Como iniciar
+Acesse o repositório da disciplina no GitHub.
+
+Abra a pasta alunos correspondente à atividade.
+
+Prepare o ambiente Python.
+
+Windows
+
+py -3 -m venv .venv
+
+.venv\Scripts\python.exe -m pip install -r requirements.txt
+
+macOS/Linux
+
+python3 -m venv .venv
+
+.venv/bin/python -m pip install -r requirements.txt
+
+Execute inicialmente as demonstrações disponibilizadas na aula.
+
+Em seguida, execute o arquivo correspondente à atividade.
+
+Quem estiver utilizando o PyCharm deverá abrir a pasta alunos da aula como projeto e executar o programa utilizando a opção Run.
+
+Atividade 1 – Mini Sistema Solar
+Conteúdo: Transformações geométricas
+Pasta: Aula_Transformacoes/alunos/
+Arquivo: atividade_sistema_solar.py
+Captura do resultado: tecla P
+
+Utilize apenas:
+
+make_translation
+make_rotation_z
+make_scale
+
+As transformações deverão ser combinadas utilizando o operador @.
+
+O programa deverá apresentar:
+
+O Sol girando em torno do próprio centro.
+
+Um planeta orbitando o Sol com raio 0.6.
+
+O planeta girando também em torno do próprio eixo, com velocidade diferente da velocidade da órbita.
+
+Uma Lua orbitando o planeta com raio 0.2, acompanhando seu movimento.
+
+As teclas ↑ e ↓ deverão aumentar e diminuir a velocidade da órbita.
+
+A velocidade da órbita nunca poderá assumir valor negativo.
+
+Questão de explicação:
+Por que a órbita utiliza R @ T e a rotação própria do planeta fica à direita da translação?
+
+Enunciado completo:
+https://github.com/rodrygofesantos/pygame/blob/main/Aula_Transformacoes/alunos/ATIVIDADE.md
+
+Atividade 2 – Braço Robótico
+Conteúdo: Grafo de Cena
+Pasta: Aula_GrafoCena/alunos/
+Arquivo: atividade_braco.py
+Captura do resultado: tecla P
+
+O programa deverá possuir:
+
+Um pivô (Object3D) localizado no topo da base.
+
+Um braço laranja conectado ao pivô pela extremidade inferior.
+
+Um segundo pivô na extremidade do braço, representando o cotovelo.
+
+Um antebraço azul conectado ao cotovelo.
+
+Uma garra cinza posicionada na extremidade do antebraço.
+
+Controles:
+
+A / D: girar a base e todo o braço em torno do eixo Y.
+
+W / S: movimentar o ombro em torno do eixo Z.
+
+I / K: movimentar o cotovelo em torno do eixo Z.
+
+Questão de explicação:
+Por que foi necessário utilizar pivôs em vez de simplesmente girar diretamente as caixas que representam o braço e o antebraço?
+
+Enunciado completo:
+https://github.com/rodrygofesantos/pygame/blob/main/Aula_GrafoCena/alunos/ATIVIDADE.md
+
+Atividade 3 – Cubo com Satélite Texturizado
+Conteúdo: Texturas
+Pasta: Aula_Texturas/alunos/
+Arquivo: atividade_cubo.py
+Captura do resultado: tecla S
+
+O programa deverá apresentar:
+
+Um cubo principal utilizando a textura mosaico.png.
+
+Um segundo cubo, representando um satélite, utilizando a textura grade_uv.png.
+
+A textura do satélite deverá utilizar repeatUV = [2,2].
+
+O satélite deverá ser filho do cubo principal.
+
+O satélite deverá ficar a uma distância de 1.3 do centro.
+
+Sua escala deverá ser 0.4.
+
+O satélite deverá acompanhar a órbita do cubo principal.
+
+As teclas ↑ e ↓ deverão alterar a velocidade de rotação do cubo principal.
+
+O satélite também deverá girar em torno do próprio eixo X.
+
+Questão de explicação:
+Qual é o papel das coordenadas UV em uma textura e qual é o efeito da configuração repeatUV = [2,2]?
+
+Enunciado completo:
+https://github.com/rodrygofesantos/pygame/blob/main/Aula_Texturas/alunos/ATIVIDADE.md
+
+Entrega pelo GitHub
+A entrega deverá ser realizada obrigatoriamente pelo GitHub.
+
+Cada dupla deverá disponibilizar no repositório:
+
+o arquivo .py da atividade devidamente preenchido;
+
+a captura de tela do resultado;
+
+um arquivo README.md;
+
+os nomes completos dos dois integrantes da dupla;
+
+a resposta da questão de explicação da atividade.
+
+No README.md, deverão constar:
+
+Disciplina: Computação Gráfica
+Atividade: nome da atividade realizada
+Integrantes: nomes completos dos dois alunos
+Descrição: breve explicação da solução desenvolvida
+Resposta da questão: resposta da questão conceitual apresentada no enunciado.
+
+Após concluir o envio dos arquivos para o GitHub, os dois integrantes da dupla deverá entregar no Blackboard o link do repositório de cada um.
+
+Exemplo:
+
+https://github.com/usuario/nome-do-repositorio
+
+Antes de enviar, verifique se o repositório está acessível e se todos os arquivos necessários foram incluídos.
+
+Avaliação – 6 pontos
+A atividade valerá 6 pontos.
+
+A avaliação considerará:
+
+3,0 pontos – implementação e funcionamento correto da atividade;
+
+1,0 ponto – utilização correta dos conceitos estudados;
+
+0,5 ponto – organização e clareza do código;
+
+0,5 ponto – captura de tela comprovando a execução;
+
+0,5 ponto – resposta da questão conceitual;
+
+0,5 ponto – organização e entrega correta pelo GitHub.
+
+Total: 6,0 pontos.
+
+Dicas importantes
+As velocidades utilizadas nas animações são calculadas por segundo. Portanto, utilize self.deltaTime.
+
+Em uma expressão A @ B @ ponto, a matriz localizada mais à direita é aplicada primeiro.
+
+Posicione o objeto antes de aplicar a escala, evitando alterar também a distância em relação à origem.
+
+Caso apareça o erro ModuleNotFoundError: core, execute o programa a partir da pasta alunos da respectiva aula.
+
+Material geral dos exercícios:
+
+https://github.com/rodrygofesantos/pygame/blob/main/EXERCICIOS.md
